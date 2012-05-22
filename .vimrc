@@ -53,8 +53,6 @@ set wildmode=longest,list:full
 
 " http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
 set mouse=a
-nmap <F7> :bp<CR>
-nmap <F8> :bn<CR>
 set ignorecase " case insensitive by default
 set cursorline " highlight current line
 set incsearch " BUT do highlight as you type your search phrase
@@ -129,3 +127,4 @@ autocmd BufWrite * call DeleteTrailingWS()
 
 # Annoying: http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
 set pastetoggle=<F8>
+
