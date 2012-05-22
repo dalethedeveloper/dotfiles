@@ -1,0 +1,8 @@
+#http://pbraun.nethence.com/code/misc/screenrc.html
+startup_message off
+caption always "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %{=b BW} %H %{-} %l %c %d/%m/%Y"
+bindkey ^[, prev
+bindkey ^[; next
+shelltitle "$ |bash"
+autodetach on
+defscrollback 65000
