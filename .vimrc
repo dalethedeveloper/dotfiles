@@ -34,7 +34,6 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
 "" http://mislav.uniqpath.com/2011/12/vim-revisited/
-color desert
 let mapleader=","
 
 " http://www.8t8.us/vim/vim.html
@@ -125,6 +124,14 @@ function DeleteTrailingWS()
 endfunction
 autocmd BufWrite * call DeleteTrailingWS()
 
-# Annoying: http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
+" Annoying: http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
 set pastetoggle=<F8>
+
+" On the solarized bandwagon
+if has('gui_running')
+    set background=light
+	colorscheme solarized
+else
+	colorscheme bensday
+endif
 
